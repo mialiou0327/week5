@@ -1,0 +1,128 @@
+
+
+.nav{
+    width:296px;
+    height: 100%;
+    padding: 0px 30px 100% 30px; 
+    background-color: $new-primary;
+}
+
+
+
+.navbar-item{
+    // 此列不清楚
+    // width: 296px;修改成這樣就ＯＫ，但想知道為什麼不能設定成100%
+    width:100%;
+ 
+    &__list-2{
+        padding: 0px 0px 0 50px;
+
+    }
+    &__list{
+        padding-left: 50px;
+        width: 100%;
+    }
+    
+    &__list:hover{
+        background-color: $new-frame;
+        .navbar-brand{
+         color: $new-notice;
+        }
+    } 
+    &__list a:hover{
+        color: $new-second;
+    }
+
+}
+
+
+
+.navbar-brand{
+    color: $new-second;
+}
+
+.navbar-member{
+    left: 30px;
+    bottom: 30px;
+
+    a{
+        text-decoration: none;
+    }
+    p{
+        font-size: 12px;
+        margin-bottom: 0;
+        color: $new-third;
+    }
+
+&__account{
+    margin-bottom: 0;
+}  
+
+&__pic{
+    background-color: chocolate;
+    background-image: url(/style/image/andychen.jpeg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+
+    
+}
+
+}
+
+.container{
+    border: 1px solid black;
+}
+
+.main-title{
+    
+    
+}
+
+
+.assignment-list__course{
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+
+}
+
+.assignment-list__course :hover{
+    color: $new-notice;
+    transition: color 300ms linear;
+}
+
+.list-group__content{
+    border: $new-frame;
+}
+
+.list-group__content a:first-child{
+    background-color: $new-primary;
+
+}
+
+   
+
+.list-group__content :hover{
+    background-color: $new-primary;
+    transition: background-color 300ms linear;
+}
+
+.main-function--f1 :hover{
+    color: $new-notice;
+}
+
+.list-group--number{
+    text-decoration: none; 
+    
+}
+.list-group--number :hover{
+    color: $new-notice;
+    transition: color 300ms linear;
+
+
+}
+
+.list-group__author{
+    color: $new-third;
+}
