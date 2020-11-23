@@ -74,7 +74,7 @@ html, body{
 
 &__pic{
     background-color: chocolate;
-    background-image: url(/style/image/andychen.jpeg);
+    background-image: url(../image/andychen.jpeg);
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -150,7 +150,8 @@ html, body{
 }
 
 .navbar-member__pic2{
-    background-image: url(/style/image/emilywang.jpeg);
+    background-color: chocolate;
+    background-image: url(../image/emilywang.jpeg);
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -165,10 +166,11 @@ html, body{
 }
 
 .navbar-member__pic3{
-    background-image: url(/style/image/andychen.jpeg);
+    background-image: url(../image/andychen.jpeg);
     background-size: cover;
     width: 50px;
     height: 50px;
+    background-color: chocolate;
 
 }
 
