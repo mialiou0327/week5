@@ -12,11 +12,14 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
+  <div class="container-fluid d-flex">
+
     <!-- !左側導覽 -->
-    <div class="content d-flex justify-content-between">
+    
       <div class="nav">
-        <nav class="navbar bg-newprimary " >
-          <ul class="navbar-item list-unstyled fixed-top mt-5">
+        <nav class="navbar bg-newprimary" >
+          <ul class="navbar-item list-unstyled ">
             <li class="navbar-item__list-2 mb-4 "><a class="nav-logo" href="#"><img class="nav-logo mb-4" src="style/image/logo.svg" alt="#" height="45px"></a></li>
             <li class="navbar-item__list mb-4 "><a class="navbar-brand d-flex align-items-center" href="#">
               <span class="material-icons mr-2">insert_chart</span>insert_chart</a></li>
@@ -31,8 +34,9 @@
             <li class="navbar-item__list mb-4"><a class="navbar-brand d-flex align-items-center" href="#">
               <span class="material-icons mr-2">settings</span>Bootstrap</a></li> 
             </ul>
+
             <!-- !會員登入 -->
-            <div class="navbar-member fixed-bottom d-flex align-items-center">
+            <div class="navbar-member d-flex align-items-center ml-4 mb-0">
               <div class="navbar-member__pic rounded-circle mr-4"></div>
               <div class="navbar-member__info">
                 <h5 class="navbar-member__accound">Andy Chen</h5> 
@@ -45,94 +49,166 @@
     </div>
     
     
-    <!-- !右側主頁選單 -->
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <!-- ！表頭 -->
-            <div class="main-title mt-5 mb-5">
-              <div class="assignment-list d-flex align-items-center justify-content-between">
-                <h3>Assignment</h3>
-                <a class="assignment-list__course text-dark" href="#"><p class="assignment-list__text d-flex align-items-center mb-0">All Courses<span class="material-icons mr-2 text-success">expand_more</span></p>
-                </a>
-              </div>
-            </div>
-            <!-- ！選單 -->
-            <div class="list-group">
-              <div class="list-group__sum d-flex align-items-center">
-                <a class="list-group--number d-flex text-dark" href="#"><h5>All(4)</h5><span class="material-icons mr-2 text-success">expand_more</span>
-                </a>
-              </div>
-              <!-- ！選單列表 -->
-              <div class="list-group__content">
-                <a href="#" class="list-group__text list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <small class="mb-1">Chapter Assignment 2</small>
-                    <small>4 hrs ago</small>
-                  </div>
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Please check this file…</h5>
-                    <small class="list-group__author">Emily Wang</small>
-                  </div>
-  
-                </a>
-              <a href="#" class="list-group__text list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <small class="mb-1">Chapter Assignment 3</small>
-                  <small>12 hrs ago</small>
-                </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">My Homework</h5>
-                  <small class="list-group__author">David Xu</small>
-                </div>
 
-              </a>
-              <a href="#" class="list-group__text list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <small class="mb-1">Final Assignment</small>
-                  <small>18 hrs ago</small>
-                </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Have a problem with this…</h5>
-                  <small class="list-group__author">Tony Wei</small>
-                </div>
-
-              </a>
-              <a href="#" class="list-group__text list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <small class="mb-1">Final Assignment</small>
-                  <small>19 hrs ago</small>
-                </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">Did I do it right?</h5>
-                  <small class="list-group__author">Christina Lin</small>
-                </div>
-
-              </a>
-            </div>
-            </div>
-          </div>
-          
-
-
-          <!-- ！內文 -->
-          <div class="col-8 d-flex justify-content-end mt-5">
-            <div class="main-function">
-              <a class="main-function--f1 text-dark" href="#"><span class="material-icons mr-4">search</span></a>
-              <a class="main-function--f1 text-dark" href="#"><span class="material-icons">notifications_active</span></a>
-              
-            </div>
-            
-          </div>
-  
-        </div>
-      </div>
       
   
 
+    <!-- !右側主頁選單 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <!-- ！表頭 -->
+          <div class="main-title mt-5 mb-5">
+            <div class="assignment-list d-flex align-items-center justify-content-between">
+              <h3>Assignment</h3>
+              <a class="assignment-list__course text-dark" href="#"><p class="assignment-list__text d-flex align-items-center mb-0">All Courses<span class="material-icons mr-2 text-success">expand_more</span></p>
+              </a>
+            </div>
+          </div>
+          <!-- ！選單 -->
+          <div class="list-group">
+            <div class="list-group__sum d-flex align-items-center">
+              <a class="list-group--number d-flex text-dark" href="#"><h5>All(4)</h5><span class="material-icons mr-2 text-success">expand_more</span>
+              </a>
+            </div>
+            <!-- ！選單列表 -->
+            <div class="list-group__content">
+              <a href="#" class="list-group__text list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="mb-1">Chapter Assignment 2</small>
+                  <small>4 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Please check this file…</h5>
+                  <small class="list-group__author">Emily Wang</small>
+                </div>
+
+              </a>
+            <a href="#" class="list-group__text list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <small class="mb-1">Chapter Assignment 3</small>
+                <small>12 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">My Homework</h5>
+                <small class="list-group__author">David Xu</small>
+              </div>
+
+            </a>
+            <a href="#" class="list-group__text list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <small class="mb-1">Final Assignment</small>
+                <small>18 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Have a problem with this…</h5>
+                <small class="list-group__author">Tony Wei</small>
+              </div>
+
+            </a>
+            <a href="#" class="list-group__text list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <small class="mb-1">Final Assignment</small>
+                <small>19 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Did I do it right?</h5>
+                <small class="list-group__author">Christina Lin</small>
+              </div>
+
+            </a>
+          </div>
+          </div>
+        </div>
+        
 
 
+        <!-- ！內文 -->
+        <div class="col-8 mt-5">
+          <div class="main-container d-flex flex-column">
+           
+            <div class="main-function">
+              <a class="main-function--f1 text-dark" href="#"><span class="material-icons mr-4">search</span></a>
+              <a class="main-function--f1 text-dark" href="#"><span class="material-icons">notifications_active</span></a>
+  
+            </div>
+
+            <div class="main-function__time">
+              <small>2 comments</small>
+            </div>
+            
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="course__title">
+                  <small>Chapter Assignment 2 / HTML&CSS</small>
+                  <h5>Please check this file for me, thanks!</h5>
+                </div>
+                <div class="course__more-vert">
+                  <a class="course__more-vert--icon text-dark" href="#"><span class="material-icons">more_vert</span></a>
+                    
+                    
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="article1 d-flex">
+                  <div class="article1-pic">
+                    <div class="navbar-member__pic2 rounded-circle mr-4"></div>
+                  </div>
+                  <div class="article1-content">
+                    <h5>Emily Wang</h5>
+                    <small>10:38 AM (4 hours ago)</small>
+                    <p class="mt-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                    <button type="button" class="article1-content--btn btn bg-primary d-flex"><span class="material-icons">attach_file</span><h5 class="mb-0">HW-2-David.zip</h5></button>                      
+                  </div>
+                </div>
+                <div class="article2 d-flex border-top  mt-4 pt-4">
+                  <div class="article1-pic">
+                    <div class="navbar-member__pic3 rounded-circle mr-4"></div>
+                  </div>
+                  <div class="article1-content">
+                    <div class="article-content__info d-flex justify-content-between align-items-center">
+                      <div class="article-content__author">
+                        <h5>Andy Chen (You)</h5>
+                        <small>13:24 AM (1 hours ago)</small>
+                      </div>
+                      <div class="article-content__more">
+                        <span class="material-icons">star_border</span>
+                        <span class="material-icons ml-3">edit</span>
+                      </div>
+                    </div>
+                    <p class="mt-4">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br>
+                      <br>You can: 　
+                      <br>• adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or 　
+                      <br>• change the display so it isn’t inline.
+                    </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-footer d-flex justify-content-between mt-4 mb-5">
+            <div class="card-chevron">
+              <a class="card-chevron__link text-dark" href="#"><span class="material-icons">chevron_left</span></a>
+              <a class="card-chevron__link text-dark" href="#"><span class="material-icons">chevron_right</span></a>
+            </div>
+            <div class="card-button">
+              <button type="button" class="card-button__1 btn btn-outline-dark">Mark as read</button>
+              <button type="button" class="card-button__2 btn btn-outline-dark  ml-4 ">Reply</button>
+            </div>
+          </div>
+
+
+    
+
+          
+        </div>
+
+      </div>
     </div>
+
+
+
+  </div>
 
 
 
